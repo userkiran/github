@@ -1,18 +1,18 @@
 provider "aws" {
-region = "us-east-2"
-access_key = ""
-secret_key = ""
+region = "ap-south-1"
+access_key = "AKIAS6I325TB7CWEU34J"
+secret_key = "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"
 }
-resource "aws_instance" "trlinux" {
+resource "aws_instance" "ec2-instance" {
 ami = "ami-0443305dabd4be2bc"
 instance_type = "t2.micro"
-key_name = "wbg28"
+key_name = "userkiran"
 count = "2"
 tags = {
-        Name = "terraform"
+        Name = "Linux_Jenkins"
 }
 }
 resource "aws_s3_bucket" "terrabucket" {
-bucket = "buckettr1234kiran"
+bucket = "bucket"
 acl = "private"
 }
