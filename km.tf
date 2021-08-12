@@ -5,7 +5,7 @@ secret_key = "fwZM5jtfsAKhVArC88ROe/peGcstcuoyCVcqOp9K"
 }
 
 resource "aws_s3_bucket" "terrabucket" {
-bucket = "hellokirankumar325"
+bucket = "325hellokirankumar325"
 acl = "private"
 }
 
