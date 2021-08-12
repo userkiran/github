@@ -13,7 +13,7 @@ tags = {
 }
 }
 resource "aws_s3_bucket" "terrabucket" {
-bucket = "hellokirankumar1234"
+bucket = "hellokirankumar325"
 acl = "private"
 }
 
